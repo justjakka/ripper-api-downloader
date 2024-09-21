@@ -58,10 +58,9 @@ if __name__ == '__main__':
                         sys.stdout.flush()
                         exit(1)
 
-            server_filename = response.json()["message"]
-            filename = server_filename.split('/')[-1]
+            filename = response.json()["message"]
 
-            response = requests.get(server_url + "file", headers={'api-key': key}, json={'url': server_filename})
+            response = requests.get(server_url + "file", headers={'api-key': key}, json={'url': filename})
             print ("\033[A                             \033[A")
             if response.headers.get('Content-Type') == 'application/zip':
                 with open(filename, 'wb') as f:
