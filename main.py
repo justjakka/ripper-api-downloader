@@ -2,8 +2,8 @@
 
 import sys, requests, re, json, time
 
-key = "ZeUGE0md3G8ohnUr03zR3Wixd5S9owf6gzerjp1F5gA="
-server_url = 'https://dev-api.jakka.su/'
+key = "api-key"
+server_url = 'https://api.jakka.su/'
 
 
 
