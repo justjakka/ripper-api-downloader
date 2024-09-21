@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import sys, requests, re, json, time
+import sys, requests, json, time
 
 key = "api-key"
 server_url = 'https://api.jakka.su/'
